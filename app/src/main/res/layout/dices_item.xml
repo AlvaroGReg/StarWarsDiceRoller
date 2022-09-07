@@ -2,8 +2,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView_dice"
             android:layout_width="@dimen/dice_size"
             android:layout_height="@dimen/dice_size"
             app:layout_constraintEnd_toEndOf="@+id/textView_diceName"
@@ -37,25 +37,26 @@
             android:layout_weight="1"
             android:gravity="center_horizontal|center_vertical"
             android:inputType="number"
-            android:text="XX"
+            android:text="0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView_dice"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/btn_add"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             app:layout_constraintEnd_toStartOf="@+id/textView_dice_count"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_dice"
             app:srcCompat="@drawable/ic_add_foreground" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/btn_remove"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             app:layout_constraintStart_toEndOf="@+id/textView_dice_count"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_dice"
             app:srcCompat="@drawable/ic_remove_foreground" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

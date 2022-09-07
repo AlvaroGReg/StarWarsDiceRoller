@@ -8,9 +8,9 @@
     android:orientation="vertical">
 
     <include
-        layout="@layout/dices_fragment"
+        layout="@layout/fragment_dices_list"
         android:layout_width="match_parent"
-        android:layout_height="401dp" />
+        android:layout_height="wrap_content" />
 
     <include
         layout="@layout/results_fragment"
