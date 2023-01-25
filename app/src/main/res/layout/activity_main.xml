@@ -10,10 +10,6 @@
     <include
         layout="@layout/fragment_dices_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <include
-        layout="@layout/results_fragment"
-/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

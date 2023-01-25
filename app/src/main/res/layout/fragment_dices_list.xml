@@ -7,8 +7,11 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recycler_view_dices"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FF0E0E"
         android:padding="8dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,6 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:spanCount="3"
-        tools:listitem="@layout/dices_item"
-        tools:itemCount="7"/>
+        tools:itemCount="7"
+        tools:listitem="@layout/dices_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>

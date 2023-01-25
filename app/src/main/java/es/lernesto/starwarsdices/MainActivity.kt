@@ -2,6 +2,7 @@ package es.lernesto.starwarsdices
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
 import es.lernesto.starwarsdices.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
