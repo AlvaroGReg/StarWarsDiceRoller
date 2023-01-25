@@ -1,4 +1,4 @@
-package es.lernesto.starwarsdices.ui
+package es.lernesto.starwarsdices
 
 import android.os.Bundle
 import android.view.LayoutInflater

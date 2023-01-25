@@ -56,6 +56,4 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
     }
 
     override fun getItemCount(): Int {return dicesList.size}
-
-
 }
