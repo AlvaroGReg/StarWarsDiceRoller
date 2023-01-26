@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:minHeight="@dimen/button_size"
+        android:minHeight="@dimen/plus_size"
         android:orientation="vertical">
 
         <TextView
@@ -41,8 +41,8 @@
 
             <ImageView
                 android:id="@+id/btn_add"
-                android:layout_width="@dimen/button_size"
-                android:layout_height="@dimen/button_size"
+                android:layout_width="@dimen/plus_size"
+                android:layout_height="@dimen/plus_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView_dice"
                 app:srcCompat="@drawable/ic_add_foreground" />
@@ -50,7 +50,7 @@
             <TextView
                 android:id="@+id/textView_dice_count"
                 android:layout_width="@dimen/text_view_width"
-                android:layout_height="@dimen/button_size"
+                android:layout_height="@dimen/plus_size"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|center_vertical"
                 android:inputType="number"
@@ -62,8 +62,8 @@
 
             <ImageView
                 android:id="@+id/btn_remove"
-                android:layout_width="@dimen/button_size"
-                android:layout_height="@dimen/button_size"
+                android:layout_width="@dimen/plus_size"
+                android:layout_height="@dimen/plus_size"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView_dice"
                 app:srcCompat="@drawable/ic_remove_foreground" />

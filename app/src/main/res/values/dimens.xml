@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_size">25dp</dimen>
+    <dimen name="plus_size">25dp</dimen>
     <dimen name="text_view_width">50dp</dimen>
     <dimen name="text_view_height">30dp</dimen>
     <dimen name="dice_size">100dp</dimen>
+    <dimen name="margin_textviews">8dp</dimen>
+
+    <dimen name="results_font">18sp</dimen>
+
+    <dimen name="buttons_width">100dp</dimen>
+    <dimen name="buttons_height">40dp</dimen>
 
 </resources>

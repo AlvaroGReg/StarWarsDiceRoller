@@ -1,13 +1,14 @@
-package es.lernesto.starwarsdices
+package es.lernesto.starwarsdices.controller
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import java.util.concurrent.RecursiveAction
+import es.lernesto.starwarsdices.R
+import es.lernesto.starwarsdices.model.DiceModel
+import es.lernesto.starwarsdices.model.DicesData
 
 class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
 

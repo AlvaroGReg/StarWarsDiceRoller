@@ -8,9 +8,23 @@
     android:orientation="vertical">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="es.lernesto.starwarsdices.DiceListFragment"
+        android:id="@+id/dices_container"
+        android:name="es.lernesto.starwarsdices.view.DiceListFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:layout="@layout/fragment_dices_list" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/buttons_fragment"
+        android:name="es.lernesto.starwarsdices.view.ButtonsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/buttons_fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/results_container"
+        android:name="es.lernesto.starwarsdices.view.ResultsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/results_fragment" />
 </LinearLayout>

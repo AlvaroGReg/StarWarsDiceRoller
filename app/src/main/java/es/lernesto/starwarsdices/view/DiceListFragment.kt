@@ -1,20 +1,14 @@
-package es.lernesto.starwarsdices
+package es.lernesto.starwarsdices.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import es.lernesto.starwarsdices.DicesAdapter
+import es.lernesto.starwarsdices.controller.DicesAdapter
 import es.lernesto.starwarsdices.R
-import es.lernesto.starwarsdices.databinding.FragmentDicesListBinding
-import kotlinx.coroutines.launch
 
 class DiceListFragment: Fragment() {
 

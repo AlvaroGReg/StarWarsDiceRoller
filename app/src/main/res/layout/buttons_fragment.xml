@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_rolldices"
+        android:layout_width="@dimen/buttons_width"
+        android:layout_height="@dimen/buttons_height"
+        android:layout_margin="4dp"
+        android:text="@string/roll" />
+</LinearLayout>
