@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import es.lernesto.starwarsdices.DicesAdapter
@@ -17,7 +18,7 @@ import kotlinx.coroutines.launch
 
 class DiceListFragment: Fragment() {
 
-//    lateinit var binding: FragmentDicesListBinding
+//  lateinit var binding: FragmentDicesListBinding
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: DicesAdapter
 
@@ -35,7 +36,7 @@ class DiceListFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val layoutManager = LinearLayoutManager(context)
+        val layoutManager = GridLayoutManager(context,4)
         recyclerView = view.findViewById(R.id.recycler_view_dices)
         recyclerView.layoutManager = layoutManager
         recyclerView.setHasFixedSize(true)

@@ -15,18 +15,11 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
     private val dicesList : List<DiceModel> = data.dices
 
     class DicesViewHolder (view:View):RecyclerView.ViewHolder(view){
-        val textViewName: TextView
-        val imageViewDice: ImageView
-        val imageViewAdd: ImageView
-        val imageViewRemove: ImageView
-        val textViewCount: TextView
-        init {
-            textViewName = view.findViewById(R.id.textView_diceName)
-            imageViewDice = view.findViewById(R.id.imageView_dice)
-            imageViewAdd = view.findViewById(R.id.btn_add)
-            imageViewRemove = view.findViewById(R.id.btn_remove)
-            textViewCount = view.findViewById(R.id.textView_dice_count)
-        }
+        val textViewName: TextView= view.findViewById(R.id.textView_diceName)
+        val imageViewDice: ImageView= view.findViewById(R.id.imageView_dice)
+        val imageViewAdd: ImageView= view.findViewById(R.id.btn_add)
+        val imageViewRemove: ImageView = view.findViewById(R.id.btn_remove)
+        val textViewCount: TextView = view.findViewById(R.id.textView_dice_count)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DicesViewHolder {
@@ -36,6 +29,7 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: DicesViewHolder, position: Int) {
+
         val item = dicesList[position]
         holder.textViewName.text = item.name
         holder.imageViewDice.setImageResource(item.imageResourceId)
