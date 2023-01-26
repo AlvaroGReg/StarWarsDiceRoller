@@ -1,5 +1,7 @@
 package es.lernesto.starwarsdices.model.dices_data
 
+
+import android.content.res.Resources
 import es.lernesto.starwarsdices.R
 import es.lernesto.starwarsdices.model.DiceModel
 
@@ -17,11 +19,11 @@ object DicesData  {
         ),
         DiceModel(
             R.drawable.challenging_dice_12f,
-            name = "Challenging"
+            name = "Challenge"
         ),
         DiceModel(
             R.drawable.diff_dice_8f,
-            name = "Difficult"
+            name = "Difficulty"
         ),
         DiceModel(
             R.drawable.profiency_dice_12f,
@@ -29,7 +31,7 @@ object DicesData  {
         ),
         DiceModel(
             R.drawable.setback_dice_6f,
-            name = "Set Back"
+            name = "Set back"
         ),
         DiceModel(
             R.drawable.force_dice_12f,

@@ -5,4 +5,11 @@
     <string name="tri_desp">Triumph/Despair:</string>
     <string name="lig_dark">Light/Dark:</string>
     <string name="roll">Roll</string>
+    <string name="ability">Ability</string>
+    <string name="Difficulty">Difficulty</string>
+    <string name="Force">Force</string>
+    <string name="Proficiency">Proficiency</string>
+    <string name="Challenge">Challenge</string>
+    <string name="Boost">Boost</string>
+    <string name="Setback">Set back</string>
 </resources>
