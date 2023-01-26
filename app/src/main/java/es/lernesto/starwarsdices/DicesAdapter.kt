@@ -32,7 +32,6 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DicesViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.dices_item,parent, false)
-
         return DicesViewHolder(adapterLayout)
     }
 
@@ -52,8 +51,6 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
             num--
             holder.textViewCount.text = num.toString()
         }
-
     }
-
     override fun getItemCount(): Int {return dicesList.size}
 }
