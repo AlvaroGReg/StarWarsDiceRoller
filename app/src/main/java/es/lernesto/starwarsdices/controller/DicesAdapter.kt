@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import es.lernesto.starwarsdices.R
 import es.lernesto.starwarsdices.model.DiceModel
-import es.lernesto.starwarsdices.model.DicesData
+import es.lernesto.starwarsdices.model.dices_data.DicesData
 
 class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
 

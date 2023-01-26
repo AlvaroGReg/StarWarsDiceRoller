@@ -1,6 +1,7 @@
-package es.lernesto.starwarsdices.model
+package es.lernesto.starwarsdices.model.dices_data
 
 import es.lernesto.starwarsdices.R
+import es.lernesto.starwarsdices.model.DiceModel
 
 object DicesData  {
 
@@ -8,38 +9,31 @@ object DicesData  {
 
         DiceModel(
             R.drawable.ability_dice_8f,
-            name = "Ability",
-            faces = 8,
+            name = "Ability"
         ),
         DiceModel(
             R.drawable.boost_dice_6f,
-            name = "Boost",
-            faces = 6
+            name = "Boost"
         ),
         DiceModel(
             R.drawable.challenging_dice_12f,
-            name = "Challenging",
-            faces = 12
+            name = "Challenging"
         ),
         DiceModel(
             R.drawable.diff_dice_8f,
-            name = "Difficult",
-            faces = 8
+            name = "Difficult"
         ),
         DiceModel(
             R.drawable.profiency_dice_12f,
-            name = "Proficiency",
-            faces = 12
+            name = "Proficiency"
         ),
         DiceModel(
             R.drawable.setback_dice_6f,
-            name = "Set Back",
-            faces = 6
+            name = "Set Back"
         ),
         DiceModel(
             R.drawable.force_dice_12f,
-            name = "Force",
-            faces = 12
+            name = "Force"
         )
     )
 
