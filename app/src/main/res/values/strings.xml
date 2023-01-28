@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">Star Wars Dices</string>
-    <string name="Succ_Fail">Succes/Failure</string>
+    <string name="Succ_Fail">Success/Failure</string>
     <string name="adv_thr">Advantage/Threat:</string>
     <string name="tri_desp">Triumph/Despair:</string>
     <string name="lig_dark">Light/Dark:</string>
     <string name="roll">Roll</string>
+
     <string name="ability">Ability</string>
     <string name="Difficulty">Difficulty</string>
     <string name="Force">Force</string>
@@ -12,4 +13,7 @@
     <string name="Challenge">Challenge</string>
     <string name="Boost">Boost</string>
     <string name="Setback">Set back</string>
+
+    <string name="save">SAVE</string>
+    <string name="edit">EDIT</string>
 </resources>

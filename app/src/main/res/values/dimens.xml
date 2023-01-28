@@ -9,6 +9,6 @@
     <dimen name="results_font">18sp</dimen>
 
     <dimen name="buttons_width">100dp</dimen>
-    <dimen name="buttons_height">40dp</dimen>
+    <dimen name="buttons_height">48dp</dimen>
 
 </resources>
