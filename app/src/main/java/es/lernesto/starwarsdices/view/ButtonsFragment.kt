@@ -6,13 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import es.lernesto.starwarsdices.controller.MainViewModel
 import es.lernesto.starwarsdices.databinding.ButtonsFragmentBinding
+import kotlin.properties.ReadOnlyProperty
 
 
 class ButtonsFragment: Fragment() {
 
     private var _binding: ButtonsFragmentBinding? = null
     private val binding get() = _binding!!
+    private val viewModel: MainViewModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -23,9 +27,7 @@ class ButtonsFragment: Fragment() {
         _binding = ButtonsFragmentBinding.inflate(inflater,container,false)
 
         binding.btnRolldices.setOnClickListener {
-
         }
-
 
         val view = binding.root
         return view

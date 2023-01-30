@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import es.lernesto.starwarsdices.controller.DicesAdapter
 import es.lernesto.starwarsdices.R
+import es.lernesto.starwarsdices.controller.DicesAdapter
 
 class DiceListFragment: Fragment() {
 
