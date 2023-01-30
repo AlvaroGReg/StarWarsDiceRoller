@@ -27,6 +27,7 @@ class ButtonsFragment: Fragment() {
         _binding = ButtonsFragmentBinding.inflate(inflater,container,false)
 
         binding.btnRolldices.setOnClickListener {
+            viewModel.roll()
         }
 
         val view = binding.root

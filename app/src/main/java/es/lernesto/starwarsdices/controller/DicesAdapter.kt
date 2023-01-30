@@ -8,12 +8,15 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import es.lernesto.starwarsdices.R
 import es.lernesto.starwarsdices.model.DiceModel
+import es.lernesto.starwarsdices.model.RollModel
 import es.lernesto.starwarsdices.model.dices_data.DicesData
+
 
 class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
 
     private val data: DicesData = DicesData
     private val dicesList : List<DiceModel> = data.dices
+    val rollValues = RollModel(0,0,0,0,0,0,0)
 
     class DicesViewHolder (view:View):RecyclerView.ViewHolder(view){
         val textViewName: TextView= view.findViewById(R.id.textView_diceName)
@@ -35,10 +38,13 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
         holder.textViewName.text = item.name
         holder.imageViewDice.setImageResource(item.imageResourceId)
 
+
         holder.imageViewAdd.setOnClickListener {
             var num : Int = holder.textViewCount.text.toString().toInt()
             num++
             holder.textViewCount.text = num.toString()
+
+            rollValues.abilityNum = num
         }
 
         holder.imageViewRemove.setOnClickListener {
@@ -48,4 +54,8 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
         }
     }
     override fun getItemCount(): Int {return dicesList.size}
+
+    fun sendRollValues(): RollModel{
+        return rollValues
+    }
 }
