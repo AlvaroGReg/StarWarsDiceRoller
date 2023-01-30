@@ -16,7 +16,8 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
 
     private val data: DicesData = DicesData
     private val dicesList : List<DiceModel> = data.dices
-    val rollValues = RollModel(0,0,0,0,0,0,0)
+    val rollValues = RollModel(
+        0,0,0,0,0,0,0)
 
     class DicesViewHolder (view:View):RecyclerView.ViewHolder(view){
         val textViewName: TextView= view.findViewById(R.id.textView_diceName)
@@ -44,18 +45,34 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
             num++
             holder.textViewCount.text = num.toString()
 
-            rollValues.abilityNum = num
+            when(holder.itemId.toInt()){
+                0->rollValues.abilityNum = num
+                1->rollValues.boostNum = num
+                2->rollValues.challengeNum = num
+                3->rollValues.difficultNum = num
+                4->rollValues.profNum = num
+                5->rollValues.setBackNum = num
+                6->rollValues.forceNum = num
+            }
         }
 
         holder.imageViewRemove.setOnClickListener {
             var num : Int = holder.textViewCount.text.toString().toInt()
             num--
             holder.textViewCount.text = num.toString()
+
+            when(holder.itemId.toInt()){
+                0->rollValues.abilityNum = num
+                1->rollValues.boostNum = num
+                2->rollValues.challengeNum = num
+                3->rollValues.difficultNum = num
+                4->rollValues.profNum = num
+                5->rollValues.setBackNum = num
+                6->rollValues.forceNum = num
+            }
         }
     }
     override fun getItemCount(): Int {return dicesList.size}
 
-    fun sendRollValues(): RollModel{
-        return rollValues
-    }
+
 }
