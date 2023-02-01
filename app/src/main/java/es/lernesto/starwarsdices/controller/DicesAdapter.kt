@@ -5,8 +5,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.RecyclerView
 import es.lernesto.starwarsdices.R
+import es.lernesto.starwarsdices.databinding.ActivityMainBinding
 import es.lernesto.starwarsdices.model.DiceModel
 import es.lernesto.starwarsdices.model.RollModel
 import es.lernesto.starwarsdices.model.dices_data.DicesData
@@ -16,8 +18,6 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
 
     private val data: DicesData = DicesData
     private val dicesList : List<DiceModel> = data.dices
-    val rollValues = RollModel(
-        0,0,0,0,0,0,0)
 
     class DicesViewHolder (view:View):RecyclerView.ViewHolder(view){
         val textViewName: TextView= view.findViewById(R.id.textView_diceName)
@@ -45,15 +45,7 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
             num++
             holder.textViewCount.text = num.toString()
 
-            when(holder.itemId.toInt()){
-                0->rollValues.abilityNum = num
-                1->rollValues.boostNum = num
-                2->rollValues.challengeNum = num
-                3->rollValues.difficultNum = num
-                4->rollValues.profNum = num
-                5->rollValues.setBackNum = num
-                6->rollValues.forceNum = num
-            }
+
         }
 
         holder.imageViewRemove.setOnClickListener {
@@ -61,15 +53,6 @@ class DicesAdapter (): RecyclerView.Adapter<DicesAdapter.DicesViewHolder>(){
             num--
             holder.textViewCount.text = num.toString()
 
-            when(holder.itemId.toInt()){
-                0->rollValues.abilityNum = num
-                1->rollValues.boostNum = num
-                2->rollValues.challengeNum = num
-                3->rollValues.difficultNum = num
-                4->rollValues.profNum = num
-                5->rollValues.setBackNum = num
-                6->rollValues.forceNum = num
-            }
         }
     }
     override fun getItemCount(): Int {return dicesList.size}

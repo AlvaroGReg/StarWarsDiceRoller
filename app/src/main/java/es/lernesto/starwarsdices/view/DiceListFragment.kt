@@ -9,14 +9,12 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import es.lernesto.starwarsdices.controller.DicesAdapter
-import es.lernesto.starwarsdices.controller.MainViewModel
 
 
 class DiceListFragment: Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: DicesAdapter
-    private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
